@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MNXT823S");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ignite Digital - Your Partner in Digital Growth</title>
+    <style>
+      /* Basic CSS for demonstration - you'd use external CSS files for a real site */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #333;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Header */
+      #main-header {
+        background-color: #fff;
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #main-header .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #007bff;
+        text-decoration: none;
+      }
+      #main-header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      #main-header nav ul li {
+        margin-left: 25px;
+      }
+      #main-header nav ul li a {
+        text-decoration: none;
+        color: #555;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      #main-header nav ul li a:hover {
+        color: #007bff;
+      }
+
+      /* Hero Section */
+      #hero-section {
+        background: linear-gradient(
+            to right,
+            rgba(0, 123, 255, 0.9),
+            rgba(0, 198, 255, 0.9)
+          ),
+          url("https://via.placeholder.com/1500x700/007bff/ffffff?text=Digital+Marketing+Background")
+            no-repeat center center/cover;
+        color: #fff;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        overflow: hidden;
+      }
+      #hero-section h1 {
+        font-size: 4em;
+        margin-bottom: 20px;
+        animation: fadeInDown 1s ease-out;
+      }
+      #hero-section p {
+        font-size: 1.5em;
+        margin-bottom: 40px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        animation: fadeInUp 1s ease-out;
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: #ffc107;
+        color: #333;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .cta-button:hover {
+        background-color: #e0a800;
+        transform: translateY(-3px);
+      }
+
+      /* What We Do Section */
+      #what-we-do {
+        padding: 80px 20px;
+        text-align: center;
+        background-color: #f8f9fa;
+      }
+      #what-we-do h2 {
+        font-size: 3em;
+        margin-bottom: 60px;
+        color: #007bff;
+      }
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+      .service-item {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        transition: transform 0.3s ease;
+      }
+      .service-item:hover {
+        transform: translateY(-10px);
+      }
+      .service-item h3 {
+        font-size: 1.8em;
+        color: #333;
+        margin-bottom: 15px;
+      }
+      .service-item p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #666;
+      }
+
+      /* Why Choose Us Section */
+      #why-choose-us {
+        padding: 80px 20px;
+        background-color: #fff;
+        text-align: center;
+      }
+      #why-choose-us h2 {
+        font-size: 3em;
+        margin-bottom: 60px;
+        color: #007bff;
+      }
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+      }
+      .feature-item {
+        background-color: #f0f8ff; /* Light blue background */
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        text-align: left;
+      }
+      .feature-item h3 {
+        font-size: 1.8em;
+        color: #007bff;
+        margin-bottom: 15px;
+      }
+      .feature-item p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #555;
+      }
+
+      /* Testimonials Section */
+      #testimonials {
+        background-color: #007bff; /* Blue background */
+        color: #fff;
+        padding: 80px 20px;
+        text-align: center;
+      }
+      #testimonials h2 {
+        font-size: 3em;
+        margin-bottom: 60px;
+        color: #fff;
+      }
+      .testimonial-carousel {
+        /* For a real site, this would be a JavaScript carousel */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+      .testimonial-card {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.15
+        ); /* Slightly transparent white */
+        padding: 30px;
+        border-radius: 8px;
+        max-width: 600px;
+        text-align: left;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+      .testimonial-card p {
+        font-size: 1.2em;
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+      .testimonial-card .author {
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+      .testimonial-card .company {
+        font-style: italic;
+        font-size: 0.9em;
+        opacity: 0.8;
+      }
+
+      /* Call to Action Bottom */
+      #cta-bottom {
+        background-color: #f8f9fa;
+        padding: 80px 20px;
+        text-align: center;
+      }
+      #cta-bottom h2 {
+        font-size: 3em;
+        margin-bottom: 30px;
+        color: #007bff;
+      }
+      #cta-bottom p {
+        font-size: 1.3em;
+        margin-bottom: 40px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #555;
+      }
+
+      /* Footer */
+      #main-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+        font-size: 0.9em;
+      }
+      #main-footer .footer-nav ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      #main-footer .footer-nav ul li {
+        margin: 0 15px;
+      }
+      #main-footer .footer-nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      #main-footer .footer-nav ul li a:hover {
+        color: #007bff;
+      }
+
+      /* Animations */
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        #main-header {
+          flex-direction: column;
+        }
+        #main-header nav ul {
+          margin-top: 20px;
+          flex-direction: column;
+          align-items: center;
+        }
+        #main-header nav ul li {
+          margin: 10px 0;
+        }
+        #hero-section h1 {
+          font-size: 3em;
+        }
+        #hero-section p {
+          font-size: 1.2em;
+        }
+        #what-we-do h2,
+        #why-choose-us h2,
+        #testimonials h2,
+        #cta-bottom h2 {
+          font-size: 2.5em;
+        }
+        .service-grid,
+        .features-grid {
+          grid-template-columns: 1fr;
+        }
+        .testimonial-carousel {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MNXT823S"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header id="main-header" class="container">
+      <a href="#" class="logo">Ignite Digital</a>
+      <nav>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">Why Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero-section">
+      <div class="container">
+        <h1>Ignite Your Brand's Digital Future</h1>
+        <p>
+          We're a results-driven digital marketing agency committed to boosting
+          your online presence, generating leads, and maximizing your ROI.
+        </p>
+        <a href="form.html" class="cta-button">Get Your Free Consultation</a>
+      </div>
+    </section>
+
+    <section id="what-we-do">
+      <div class="container">
+        <h2>What We Do</h2>
+        <div class="service-grid">
+          <div class="service-item" id="service-seo">
+            <h3>Search Engine Optimization (SEO)</h3>
+            <p>
+              Improve your organic search rankings and drive qualified traffic
+              with our expert SEO strategies, keyword research, and
+              on-page/off-page optimization.
+            </p>
+          </div>
+          <div class="service-item" id="service-ppc">
+            <h3>Pay-Per-Click (PPC) Advertising</h3>
+            <p>
+              Launch highly effective PPC campaigns on Google Ads and social
+              media platforms to generate immediate leads and sales with
+              optimized ad spend.
+            </p>
+          </div>
+          <div class="service-item" id="service-social">
+            <h3>Social Media Marketing</h3>
+            <p>
+              Build a powerful brand presence, engage with your audience, and
+              drive conversions across all major social media channels.
+            </p>
+          </div>
+          <div class="service-item" id="service-content">
+            <h3>Content Marketing</h3>
+            <p>
+              Create compelling, valuable content that attracts, educates, and
+              converts your target audience, establishing you as an industry
+              authority.
+            </p>
+          </div>
+          <div class="service-item" id="service-web">
+            <h3>Web Design & Development</h3>
+            <p>
+              Craft stunning, user-friendly, and conversion-optimized websites
+              that serve as the foundation for your digital success.
+            </p>
+          </div>
+          <div class="service-item" id="service-analytics">
+            <h3>Analytics & Reporting</h3>
+            <p>
+              Gain actionable insights with our comprehensive analytics and
+              transparent reporting, ensuring you always know your campaign
+              performance.
+            </p>
+          </div>
+        </div>
+        <p style="margin-top: 50px; font-size: 1.1em">
+          Looking for more details on our services?
+        </p>
+        <a href="services.html" class="cta-button">Explore All Services</a>
+      </div>
+    </section>
+
+    <section id="why-choose-us">
+      <div class="container">
+        <h2>Why Choose Ignite Digital?</h2>
+        <div class="features-grid">
+          <div class="feature-item" id="feature-results">
+            <h3>Results-Driven Approach</h3>
+            <p>
+              We focus on measurable outcomes – increased traffic, leads, and
+              sales – not just vanity metrics. Your success is our priority.
+            </p>
+          </div>
+          <div class="feature-item" id="feature-expertise">
+            <h3>Experienced Team</h3>
+            <p>
+              Our team comprises seasoned digital marketing experts with a
+              proven track record across diverse industries.
+            </p>
+          </div>
+          <div class="feature-item" id="feature-custom">
+            <h3>Tailored Strategies</h3>
+            <p>
+              No two businesses are alike. We craft customized strategies that
+              align perfectly with your unique goals and budget.
+            </p>
+          </div>
+          <div class="feature-item" id="feature-transparent">
+            <h3>Transparent Reporting</h3>
+            <p>
+              You'll always be in the loop with clear, comprehensive reports and
+              regular communication on your campaign's progress.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-carousel">
+          <div class="testimonial-card">
+            <p>
+              "Ignite Digital completely transformed our online presence. Our
+              organic traffic has surged, and we're seeing a significant
+              increase in qualified leads. Highly recommend their SEO
+              expertise!"
+            </p>
+            <div class="author">- Priya Sharma</div>
+            <div class="company">CEO, Tech Solutions Pvt. Ltd.</div>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              "Their PPC campaigns delivered immediate ROI for our e-commerce
+              store. The team at Ignite Digital is professional, responsive, and
+              truly understands digital advertising."
+            </p>
+            <div class="author">- Rahul Verma</div>
+            <div class="company">Marketing Director, Fashion Trends</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta-bottom">
+      <div class="container">
+        <h2>Ready to Transform Your Digital Marketing?</h2>
+        <p>
+          Let's discuss your business goals and how Ignite Digital can help you
+          achieve them. Get a free, no-obligation consultation today.
+        </p>
+        <a href="form.html" class="cta-button" id="contact-button"
+          >Schedule a Discovery Call</a
+        >
+      </div>
+    </section>
+
+    <footer id="main-footer">
+      <div class="container">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#what-we-do">Services</a></li>
+            <li><a href="#why-choose-us">Why Choose Us</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <p>&copy; 2025 Ignite Digital. All rights reserved.</p>
+        <p>123 Digital Way, Cyber City, Hyderabad, Telangana 500081</p>
+        <p>Email: info@ignitedigital.com | Phone: +91 98765 43210</p>
+      </div>
+    </footer>
+  </body>
+</html>

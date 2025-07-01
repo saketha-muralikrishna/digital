@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MNXT823S");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule a Free Consultation - Ignite Digital</title>
+    <style>
+      /* Basic CSS for demonstration - Link to an external CSS file in a real project */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Header (consistent with other pages) */
+      #main-header {
+        background-color: #fff;
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #main-header .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #007bff;
+        text-decoration: none;
+      }
+      #main-header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      #main-header nav ul li {
+        margin-left: 25px;
+      }
+      #main-header nav ul li a {
+        text-decoration: none;
+        color: #555;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      #main-header nav ul li a:hover {
+        color: #007bff;
+      }
+
+      /* Hero Section for Consultation Page */
+      #consultation-hero {
+        background: linear-gradient(
+            to right,
+            rgba(0, 123, 255, 0.85),
+            rgba(0, 198, 255, 0.85)
+          ),
+          url("https://via.placeholder.com/1500x400/007bff/ffffff?text=Consultation+Background")
+            no-repeat center center/cover;
+        color: #fff;
+        text-align: center;
+        padding: 80px 20px;
+      }
+      #consultation-hero h1 {
+        font-size: 3.5em;
+        margin-bottom: 15px;
+      }
+      #consultation-hero p {
+        font-size: 1.4em;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      /* Consultation Form Section */
+      #consultation-form-section {
+        padding: 60px 20px;
+        background-color: #f8f9fa;
+      }
+      #consultation-form-section .form-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      #consultation-form-section h2 {
+        font-size: 2.5em;
+        color: #007bff;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #555;
+      }
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group input[type="tel"],
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
+      }
+      .form-group textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+      .form-group .checkbox-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .form-group .checkbox-group input[type="checkbox"] {
+        margin-right: 10px;
+        width: auto; /* Override default input width */
+      }
+      .form-group .checkbox-group label {
+        margin-bottom: 0;
+        font-weight: normal;
+      }
+      .submit-button {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .submit-button:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+      }
+
+      /* Additional Information Section */
+      #contact-info-section {
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #fff;
+      }
+      #contact-info-section h2 {
+        font-size: 2.2em;
+        color: #007bff;
+        margin-bottom: 25px;
+      }
+      #contact-info-section p {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+      }
+      #contact-info-section .contact-details {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      #contact-info-section .contact-item {
+        flex: 1;
+        min-width: 250px;
+        max-width: 350px;
+        padding: 20px;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        background-color: #f0f8ff; /* Light blue accent */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+      #contact-info-section .contact-item strong {
+        display: block;
+        font-size: 1.3em;
+        color: #007bff;
+        margin-bottom: 10px;
+      }
+      #contact-info-section .contact-item a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      #contact-info-section .contact-item a:hover {
+        color: #007bff;
+      }
+
+      /* Footer (consistent with other pages) */
+      #main-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+        font-size: 0.9em;
+      }
+      #main-footer .footer-nav ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      #main-footer .footer-nav ul li {
+        margin: 0 15px;
+      }
+      #main-footer .footer-nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      #main-footer .footer-nav ul li a:hover {
+        color: #007bff;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        #main-header {
+          flex-direction: column;
+        }
+        #main-header nav ul {
+          margin-top: 20px;
+          flex-direction: column;
+          align-items: center;
+        }
+        #main-header nav ul li {
+          margin: 10px 0;
+        }
+        #consultation-hero h1 {
+          font-size: 2.5em;
+        }
+        #consultation-hero p {
+          font-size: 1.1em;
+        }
+        #consultation-form-section h2 {
+          font-size: 2em;
+        }
+        .form-group label,
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+          font-size: 0.95em;
+        }
+        .submit-button {
+          font-size: 1.1em;
+          padding: 12px;
+        }
+        #contact-info-section .contact-details {
+          flex-direction: column;
+          align-items: center;
+        }
+        #contact-info-section .contact-item {
+          max-width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MNXT823S"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header id="main-header" class="container">
+      <a href="index.html" class="logo">Ignite Digital</a>
+      <nav>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="consultation-hero">
+      <div class="container">
+        <h1 id="hero-heading">
+          Schedule Your Free Digital Marketing Consultation
+        </h1>
+        <p id="hero-subheading">
+          Unlock your business's full potential. Let's discuss your goals and
+          how our expert strategies can drive your growth.
+        </p>
+      </div>
+    </section>
+
+    <section id="consultation-form-section">
+      <div class="container">
+        <div class="form-container">
+          <h2 id="form-heading">Tell Us About Your Project</h2>
+          <form id="consultation-form" action="thankyou.html" method="GET">
+            <div class="form-group">
+              <label for="full-name">Full Name*</label>
+              <input
+                type="text"
+                id="full-name"
+                name="fullName"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="company-name">Company Name*</label>
+              <input
+                type="text"
+                id="company-name"
+                name="companyName"
+                placeholder="Your Company"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="business-email">Business Email*</label>
+              <input
+                type="email"
+                id="business-email"
+                name="businessEmail"
+                placeholder="you@yourcompany.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone-number">Phone Number</label>
+              <input
+                type="tel"
+                id="phone-number"
+                name="phoneNumber"
+                placeholder="+91 XXXXXXXXXX"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="website-url">Your Website URL</label>
+              <input
+                type="text"
+                id="website-url"
+                name="websiteURL"
+                placeholder="https://www.yourwebsite.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="marketing-interest"
+                >What digital marketing services are you interested in?*</label
+              >
+              <select id="marketing-interest" name="marketingInterest" required>
+                <option value="">-- Please Select --</option>
+                <option value="seo">Search Engine Optimization (SEO)</option>
+                <option value="ppc">Pay-Per-Click (PPC) Advertising</option>
+                <option value="social-media">Social Media Marketing</option>
+                <option value="content-marketing">Content Marketing</option>
+                <option value="web-design">Web Design & Development</option>
+                <option value="analytics">Analytics & Reporting</option>
+                <option value="full-service">
+                  Full-Service Digital Strategy
+                </option>
+                <option value="other">Other (Please specify below)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="budget-range"
+                >What is your estimated monthly marketing budget?*</label
+              >
+              <select id="budget-range" name="budgetRange" required>
+                <option value="">-- Please Select --</option>
+                <option value="under-5k">Under ₹50,000</option>
+                <option value="5k-15k">₹50,000 - ₹1,50,000</option>
+                <option value="15k-30k">₹1,50,000 - ₹3,00,000</option>
+                <option value="30k-plus">₹3,00,000+</option>
+                <option value="not-sure">Not Sure Yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message"
+                >Briefly describe your marketing goals or challenges*</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                placeholder="e.g., Increase website traffic, generate more leads, improve brand awareness, launch a new product, etc."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  id="privacy-policy"
+                  name="privacyPolicy"
+                  required
+                />
+                <label for="privacy-policy"
+                  >I agree to the
+                  <a href="privacy-policy.html" target="_blank"
+                    >Privacy Policy</a
+                  >*</label
+                >
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="submit-button"
+              id="submit-consultation"
+            >
+              Request Consultation
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-info-section">
+      <div class="container">
+        <h2>Prefer to Speak Directly?</h2>
+        <p>
+          If you have urgent inquiries or prefer to connect right away, feel
+          free to reach out through other channels:
+        </p>
+        <div class="contact-details">
+          <div class="contact-item" id="phone-contact">
+            <strong>Call Us</strong>
+            <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+            <p>Mon - Fri, 9:00 AM - 6:00 PM IST</p>
+          </div>
+          <div class="contact-item" id="email-contact">
+            <strong>Email Us</strong>
+            <p>
+              <a href="mailto:info@ignitedigital.com">info@ignitedigital.com</a>
+            </p>
+            <p>We typically respond within 24 business hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="main-footer">
+      <div class="container">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <p>&copy; 2025 Ignite Digital. All rights reserved.</p>
+        <p>123 Digital Way, Cyber City, Hyderabad, Telangana 500081</p>
+        <p>Email: info@ignitedigital.com | Phone: +91 98765 43210</p>
+      </div>
+    </footer>
+  </body>
+</html>

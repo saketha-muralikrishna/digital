@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MNXT823S");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Ignite Digital</title>
+    <style>
+      /* Basic CSS for demonstration - Link to an external CSS file in a real project */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Header (consistent with other pages) */
+      #main-header {
+        background-color: #fff;
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #main-header .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #007bff;
+        text-decoration: none;
+      }
+      #main-header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      #main-header nav ul li {
+        margin-left: 25px;
+      }
+      #main-header nav ul li a {
+        text-decoration: none;
+        color: #555;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      #main-header nav ul li a:hover {
+        color: #007bff;
+      }
+
+      /* Hero Section for About Us Page */
+      #about-hero {
+        background: linear-gradient(
+            to right,
+            rgba(0, 123, 255, 0.85),
+            rgba(0, 198, 255, 0.85)
+          ),
+          url("https://via.placeholder.com/1500x400/007bff/ffffff?text=About+Us+Background")
+            no-repeat center center/cover;
+        color: #fff;
+        text-align: center;
+        padding: 80px 20px;
+      }
+      #about-hero h1 {
+        font-size: 3.5em;
+        margin-bottom: 15px;
+      }
+      #about-hero p {
+        font-size: 1.4em;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      /* Content Sections */
+      .content-section {
+        padding: 60px 20px;
+        border-bottom: 1px solid #eee;
+      }
+      .content-section:nth-of-type(odd) {
+        background-color: #f8f9fa; /* Light grey background for alternate sections */
+      }
+      .content-section h2 {
+        font-size: 2.8em;
+        color: #007bff;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+      .content-section p {
+        font-size: 1.1em;
+        max-width: 800px;
+        margin: 0 auto 20px auto;
+        text-align: justify;
+      }
+      .content-section .image-right,
+      .content-section .image-left {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 40px;
+        margin-top: 40px;
+      }
+      .content-section .image-right .text-content,
+      .content-section .image-left .text-content {
+        flex: 2;
+        min-width: 300px;
+      }
+      .content-section .image-right .image-content,
+      .content-section .image-left .image-content {
+        flex: 1;
+        min-width: 250px;
+        text-align: center;
+      }
+      .content-section .image-right img,
+      .content-section .image-left img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      .content-section .image-left {
+        flex-direction: row-reverse; /* Swap order for image on left */
+      }
+
+      /* Values Section */
+      #our-values .values-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+      #our-values .value-item {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        text-align: center;
+      }
+      #our-values .value-item strong {
+        display: block;
+        font-size: 1.5em;
+        color: #007bff;
+        margin-bottom: 10px;
+      }
+      #our-values .value-item p {
+        font-size: 1em;
+        margin: 0;
+        text-align: center;
+      }
+
+      /* Team Section */
+      #our-team .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+      #our-team .team-member {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        text-align: center;
+      }
+      #our-team .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 3px solid #007bff;
+      }
+      #our-team .team-member h3 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        color: #333;
+      }
+      #our-team .team-member p {
+        font-size: 0.95em;
+        color: #666;
+        margin: 0;
+        text-align: center;
+      }
+
+      /* Brochure Download Section */
+      #brochure-download {
+        padding: 60px 20px;
+        background-color: #e6f2ff; /* Light blue background */
+        text-align: center;
+      }
+      #brochure-download h2 {
+        font-size: 2.5em;
+        color: #007bff;
+        margin-bottom: 25px;
+      }
+      #brochure-download p {
+        font-size: 1.2em;
+        max-width: 700px;
+        margin: 0 auto 30px auto;
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: #ffc107;
+        color: #333;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .cta-button:hover {
+        background-color: #e0a800;
+        transform: translateY(-3px);
+      }
+
+      /* Footer (consistent with other pages) */
+      #main-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+        font-size: 0.9em;
+      }
+      #main-footer .footer-nav ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      #main-footer .footer-nav ul li {
+        margin: 0 15px;
+      }
+      #main-footer .footer-nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      #main-footer .footer-nav ul li a:hover {
+        color: #007bff;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        #main-header {
+          flex-direction: column;
+        }
+        #main-header nav ul {
+          margin-top: 20px;
+          flex-direction: column;
+          align-items: center;
+        }
+        #main-header nav ul li {
+          margin: 10px 0;
+        }
+        #about-hero h1 {
+          font-size: 2.5em;
+        }
+        #about-hero p {
+          font-size: 1.1em;
+        }
+        .content-section h2,
+        #brochure-download h2 {
+          font-size: 2.2em;
+        }
+        .content-section .image-right,
+        .content-section .image-left {
+          flex-direction: column;
+        }
+        .content-section .image-right .text-content,
+        .content-section .image-left .text-content,
+        .content-section .image-right .image-content,
+        .content-section .image-left .image-content {
+          min-width: unset;
+          width: 100%;
+        }
+        #our-values .values-grid,
+        #our-team .team-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MNXT823S"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header id="main-header" class="container">
+      <a href="index.html" class="logo">Ignite Digital</a>
+      <nav>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about-hero">
+      <div class="container">
+        <h1 id="about-hero-title">About Ignite Digital</h1>
+        <p id="about-hero-description">
+          Driving digital success for businesses in Hyderabad and beyond since
+          2018.
+        </p>
+      </div>
+    </section>
+
+    <section id="our-story" class="content-section">
+      <div class="container">
+        <h2 id="story-heading">Our Story: From Vision to Digital Impact</h2>
+        <div class="image-right">
+          <div class="text-content">
+            <p>
+              Ignite Digital was founded in **2018** in the vibrant tech hub of
+              **Hyderabad, Telangana**, with a singular vision: to empower
+              businesses to thrive in the complex digital landscape. We started
+              as a passionate team of digital strategists, SEO specialists, and
+              creative marketers who saw a gap between traditional marketing and
+              the fast-evolving online world.
+            </p>
+            <p>
+              Over the years, we've grown into a full-service digital marketing
+              agency, helping hundreds of local and international clients
+              achieve remarkable online growth. Our journey has been defined by
+              continuous learning, adapting to new trends, and an unwavering
+              commitment to delivering **tangible results** for every single
+              client.
+            </p>
+            <p>
+              We believe that successful digital marketing isn't just about
+              traffic; it's about connecting with your audience, converting
+              leads into loyal customers, and building a sustainable online
+              presence that truly reflects your brand's value.
+            </p>
+          </div>
+          <div class="image-content">
+            <img
+              src="https://via.placeholder.com/400x300/007bff/ffffff?text=Our+Story"
+              alt="Ignite Digital team collaborating"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission-vision" class="content-section">
+      <div class="container">
+        <h2 id="mission-vision-heading">Our Mission & Vision</h2>
+        <div class="image-left">
+          <div class="text-content">
+            <h3>Our Mission</h3>
+            <p>
+              To provide **innovative, data-driven digital marketing solutions**
+              that empower businesses to achieve their online goals, enhance
+              their brand presence, and generate significant, measurable returns
+              on investment.
+            </p>
+            <h3>Our Vision</h3>
+            <p>
+              To be the most trusted and results-oriented digital marketing
+              partner, recognized for our strategic excellence, client success
+              stories, and our commitment to pushing the boundaries of digital
+              innovation.
+            </p>
+          </div>
+          <div class="image-content">
+            <img
+              src="https://via.placeholder.com/400x300/28a745/ffffff?text=Mission+Vision"
+              alt="Abstract image of growth and strategy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-values" class="content-section">
+      <div class="container">
+        <h2 id="values-heading">Our Core Values</h2>
+        <p>
+          These principles guide every decision we make and every strategy we
+          implement:
+        </p>
+        <div class="values-grid">
+          <div class="value-item" id="value-results">
+            <strong>Results-Oriented</strong>
+            <p>
+              We are obsessed with delivering measurable impact and genuine ROI
+              for our clients.
+            </p>
+          </div>
+          <div class="value-item" id="value-innovation">
+            <strong>Innovation</strong>
+            <p>
+              We stay ahead of digital trends, constantly learning and applying
+              the latest strategies.
+            </p>
+          </div>
+          <div class="value-item" id="value-transparency">
+            <strong>Transparency</strong>
+            <p>
+              Open communication and clear reporting are the cornerstones of our
+              client relationships.
+            </p>
+          </div>
+          <div class="value-item" id="value-collaboration">
+            <strong>Collaboration</strong>
+            <p>
+              We partner with our clients, becoming an extension of their team
+              to achieve shared goals.
+            </p>
+          </div>
+          <div class="value-item" id="value-integrity">
+            <strong>Integrity</strong>
+            <p>
+              We operate with honesty, ethics, and a commitment to doing what's
+              right.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-team" class="content-section">
+      <div class="container">
+        <h2 id="team-heading">Meet Our Expert Team</h2>
+        <p>
+          Behind every successful campaign is a dedicated team of passionate
+          digital marketing professionals. We bring together diverse expertise
+          to ensure your brand shines online.
+        </p>
+        <div class="team-grid">
+          <div class="team-member" id="member-ceo">
+            <img
+              src="https://via.placeholder.com/150/007bff/ffffff?text=CEO"
+              alt="Profile of [CEO Name]"
+            />
+            <h3>Rohan Mehta</h3>
+            <p>Founder & CEO</p>
+            <p>15+ years in Digital Strategy</p>
+          </div>
+          <div class="team-member" id="member-marketing-director">
+            <img
+              src="https://via.placeholder.com/150/ffc107/333333?text=Director"
+              alt="Profile of [Marketing Director Name]"
+            />
+            <h3>Priya Singh</h3>
+            <p>Marketing Director</p>
+            <p>Specializes in Performance Marketing</p>
+          </div>
+          <div class="team-member" id="member-seo-lead">
+            <img
+              src="https://via.placeholder.com/150/28a745/ffffff?text=SEO"
+              alt="Profile of [SEO Lead Name]"
+            />
+            <h3>Amit Kumar</h3>
+            <p>Lead SEO Strategist</p>
+            <p>Expert in Organic Growth</p>
+          </div>
+          <div class="team-member" id="member-social-lead">
+            <img
+              src="https://via.placeholder.com/150/6f42c1/ffffff?text=Social"
+              alt="Profile of [Social Media Lead Name]"
+            />
+            <h3>Anjali Rao</h3>
+            <p>Social Media Lead</p>
+            <p>Passionate about Brand Storytelling</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="brochure-download">
+      <div class="container">
+        <h2 id="brochure-title">Learn More About Ignite Digital</h2>
+        <p id="brochure-description">
+          Download our comprehensive agency brochure to get a deeper insight
+          into our services, unique approach, and client success stories.
+        </p>
+        <a
+          href="https://lilacinfotech.com/downloads/lilac-infotech-digitalmarketing-brochure.pdf"
+          target="_blank"
+          download
+          class="cta-button"
+          id="download-brochure-button"
+          >Download Our Brochure (PDF)</a
+        >
+      </div>
+    </section>
+
+    <footer id="main-footer">
+      <div class="container">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <p>&copy; 2025 Ignite Digital. All rights reserved.</p>
+        <p>123 Digital Way, Cyber City, Hyderabad, Telangana 500081</p>
+        <p>Email: info@ignitedigital.com | Phone: +91 98765 43210</p>
+      </div>
+    </footer>
+  </body>
+</html>

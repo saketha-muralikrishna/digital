@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MNXT823S");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You for Your Inquiry! - Ignite Digital</title>
+    <style>
+      /* Basic CSS for demonstration - Link to an external CSS file in a real project */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Header (consistent with other pages) */
+      #main-header {
+        background-color: #fff;
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #main-header .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #007bff;
+        text-decoration: none;
+      }
+      #main-header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      #main-header nav ul li {
+        margin-left: 25px;
+      }
+      #main-header nav ul li a {
+        text-decoration: none;
+        color: #555;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      #main-header nav ul li a:hover {
+        color: #007bff;
+      }
+
+      /* Thank You Hero Section */
+      #thankyou-hero {
+        background: linear-gradient(
+            to right,
+            rgba(0, 123, 255, 0.85),
+            rgba(0, 198, 255, 0.85)
+          ),
+          url("https://via.placeholder.com/1500x400/007bff/ffffff?text=Thank+You+Background")
+            no-repeat center center/cover;
+        color: #fff;
+        text-align: center;
+        padding: 80px 20px;
+      }
+      #thankyou-hero h1 {
+        font-size: 3.5em;
+        margin-bottom: 15px;
+      }
+      #thankyou-hero p {
+        font-size: 1.4em;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      /* Thank You Message Section */
+      #thankyou-message-section {
+        padding: 60px 20px;
+        text-align: center;
+        background-color: #f8f9fa;
+      }
+      #thankyou-message-section h2 {
+        font-size: 2.5em;
+        color: #007bff;
+        margin-bottom: 25px;
+      }
+      #thankyou-message-section p {
+        font-size: 1.1em;
+        max-width: 800px;
+        margin: 0 auto 20px auto;
+      }
+      #thankyou-message-section strong {
+        color: #007bff;
+      }
+
+      /* What's Next Section */
+      #whats-next-section {
+        padding: 60px 20px;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+      }
+      #whats-next-section h2 {
+        font-size: 2.2em;
+        color: #007bff;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .next-steps-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+      }
+      .step-item {
+        background-color: #f0f8ff; /* Light blue accent */
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        text-align: center;
+      }
+      .step-item .step-number {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .step-item h3 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .step-item p {
+        font-size: 1em;
+        color: #555;
+        margin: 0;
+      }
+
+      /* Explore More Section */
+      #explore-more-section {
+        padding: 60px 20px;
+        text-align: center;
+        background-color: #f8f9fa;
+      }
+      #explore-more-section h2 {
+        font-size: 2.2em;
+        color: #007bff;
+        margin-bottom: 30px;
+      }
+      .explore-links-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .explore-links-grid .cta-button {
+        background-color: #007bff; /* Use primary blue for these */
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.1em;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .explore-links-grid .cta-button:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+      }
+
+      /* Footer (consistent with other pages) */
+      #main-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+        font-size: 0.9em;
+      }
+      #main-footer .footer-nav ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      #main-footer .footer-nav ul li {
+        margin: 0 15px;
+      }
+      #main-footer .footer-nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      #main-footer .footer-nav ul li a:hover {
+        color: #007bff;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        #main-header {
+          flex-direction: column;
+        }
+        #main-header nav ul {
+          margin-top: 20px;
+          flex-direction: column;
+          align-items: center;
+        }
+        #main-header nav ul li {
+          margin: 10px 0;
+        }
+        #thankyou-hero h1 {
+          font-size: 2.5em;
+        }
+        #thankyou-hero p {
+          font-size: 1.1em;
+        }
+        #thankyou-message-section h2,
+        #whats-next-section h2,
+        #explore-more-section h2 {
+          font-size: 2em;
+        }
+        .next-steps-grid {
+          grid-template-columns: 1fr;
+        }
+        .explore-links-grid {
+          flex-direction: column;
+          align-items: center;
+        }
+        .explore-links-grid .cta-button {
+          width: 80%;
+          margin-bottom: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MNXT823S"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header id="main-header" class="container">
+      <a href="index.html" class="logo">Ignite Digital</a>
+      <nav>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="thankyou-hero">
+      <div class="container">
+        <h1 id="thankyou-heading">Thank You for Your Inquiry!</h1>
+        <p id="thankyou-subheading">
+          Your journey to digital growth starts here.
+        </p>
+      </div>
+    </section>
+
+    <section id="thankyou-message-section">
+      <div class="container">
+        <h2 id="acknowledgement-heading">
+          We've Received Your Consultation Request!
+        </h2>
+        <p id="acknowledgement-text">
+          Thank you for taking the first step towards transforming your digital
+          presence with **Ignite Digital**. We truly appreciate you reaching
+          out.
+        </p>
+        <p id="expected-response-time">
+          Our team is already reviewing your submission and will be in touch
+          with you **within 1 business day** to schedule your free consultation.
+        </p>
+        <p id="check-spam-note">
+          Please ensure to **check your email inbox (and spam/junk folder)** for
+          our message.
+        </p>
+      </div>
+    </section>
+
+    <section id="whats-next-section">
+      <div class="container">
+        <h2 id="next-steps-heading">What Happens Next?</h2>
+        <div class="next-steps-grid">
+          <div class="step-item" id="step-one">
+            <span class="step-number">1</span>
+            <h3>Review & Research</h3>
+            <p>
+              Our strategists will review your submitted details and conduct
+              initial research into your business and industry.
+            </p>
+          </div>
+          <div class="step-item" id="step-two">
+            <span class="step-number">2</span>
+            <h3>Personalized Outreach</h3>
+            <p>
+              You'll receive an email or call from our team to confirm your
+              details and propose a convenient time for your consultation.
+            </p>
+          </div>
+          <div class="step-item" id="step-three">
+            <span class="step-number">3</span>
+            <h3>Your Free Consultation</h3>
+            <p>
+              During our call, we'll discuss your goals, challenges, and outline
+              potential strategies to help you grow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="explore-more-section">
+      <div class="container">
+        <h2 id="explore-heading">While You Wait, Explore More:</h2>
+        <div class="explore-links-grid">
+          <a href="case-studies.html" class="cta-button" id="link-case-studies"
+            >See Our Success Stories</a
+          >
+          <a href="blog.html" class="cta-button" id="link-blog"
+            >Read Our Latest Insights</a
+          >
+          <a href="services.html" class="cta-button" id="link-services"
+            >Review Our Services</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer id="main-footer">
+      <div class="container">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <p>&copy; 2025 Ignite Digital. All rights reserved.</p>
+        <p>123 Digital Way, Cyber City, Hyderabad, Telangana 500081</p>
+        <p>Email: info@ignitedigital.com | Phone: +91 98765 43210</p>
+      </div>
+    </footer>
+  </body>
+</html>

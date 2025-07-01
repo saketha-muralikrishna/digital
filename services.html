@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MNXT823S");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services - Ignite Digital</title>
+    <style>
+      /* Basic CSS for demonstration - Link to an external CSS file in a real project */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Header (consistent with homepage) */
+      #main-header {
+        background-color: #fff;
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #main-header .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #007bff;
+        text-decoration: none;
+      }
+      #main-header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      #main-header nav ul li {
+        margin-left: 25px;
+      }
+      #main-header nav ul li a {
+        text-decoration: none;
+        color: #555;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      #main-header nav ul li a:hover {
+        color: #007bff;
+      }
+
+      /* Hero Section for Services Page */
+      #services-hero {
+        background: linear-gradient(
+            to right,
+            rgba(0, 123, 255, 0.85),
+            rgba(0, 198, 255, 0.85)
+          ),
+          url("https://via.placeholder.com/1500x400/007bff/ffffff?text=Our+Services+Background")
+            no-repeat center center/cover;
+        color: #fff;
+        text-align: center;
+        padding: 80px 20px;
+      }
+      #services-hero h1 {
+        font-size: 3.5em;
+        margin-bottom: 15px;
+      }
+      #services-hero p {
+        font-size: 1.4em;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      /* Service Details Section */
+      .service-detail-section {
+        padding: 60px 20px;
+        border-bottom: 1px solid #eee;
+      }
+      .service-detail-section:nth-of-type(odd) {
+        background-color: #f8f9fa; /* Light grey background for alternate sections */
+      }
+      .service-detail-section h2 {
+        font-size: 2.8em;
+        color: #007bff;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+      .service-detail-section .content-flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 40px;
+        margin-top: 40px;
+      }
+      .service-detail-section .content-flex .text-content {
+        flex: 2;
+        min-width: 300px;
+      }
+      .service-detail-section .content-flex .image-content {
+        flex: 1;
+        min-width: 250px;
+        text-align: center;
+      }
+      .service-detail-section .content-flex img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      .service-detail-section h3 {
+        font-size: 1.8em;
+        color: #555;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+      .service-detail-section ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+      .service-detail-section ul li {
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23007bff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>')
+          no-repeat left center;
+        background-size: 20px;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: #ffc107;
+        color: #333;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        margin-top: 30px;
+      }
+      .cta-button:hover {
+        background-color: #e0a800;
+        transform: translateY(-3px);
+      }
+
+      /* Call to Action Bottom (consistent with homepage) */
+      #cta-bottom {
+        background-color: #f8f9fa;
+        padding: 80px 20px;
+        text-align: center;
+      }
+      #cta-bottom h2 {
+        font-size: 3em;
+        margin-bottom: 30px;
+        color: #007bff;
+      }
+      #cta-bottom p {
+        font-size: 1.3em;
+        margin-bottom: 40px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #555;
+      }
+
+      /* Footer (consistent with homepage) */
+      #main-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+        font-size: 0.9em;
+      }
+      #main-footer .footer-nav ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      #main-footer .footer-nav ul li {
+        margin: 0 15px;
+      }
+      #main-footer .footer-nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      #main-footer .footer-nav ul li a:hover {
+        color: #007bff;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        #main-header {
+          flex-direction: column;
+        }
+        #main-header nav ul {
+          margin-top: 20px;
+          flex-direction: column;
+          align-items: center;
+        }
+        #main-header nav ul li {
+          margin: 10px 0;
+        }
+        #services-hero h1 {
+          font-size: 2.5em;
+        }
+        #services-hero p {
+          font-size: 1.1em;
+        }
+        .service-detail-section h2 {
+          font-size: 2em;
+        }
+        .service-detail-section .content-flex {
+          flex-direction: column;
+        }
+        .service-detail-section .content-flex .text-content,
+        .service-detail-section .content-flex .image-content {
+          min-width: unset; /* Reset min-width for mobile */
+          width: 100%;
+        }
+        .service-detail-section:nth-of-type(odd) .content-flex {
+          flex-direction: column; /* Ensure consistent stacking */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MNXT823S"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header id="main-header" class="container">
+      <a href="index.html" class="logo">Ignite Digital</a>
+      <nav>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="services-hero">
+      <div class="container">
+        <h1>Our Comprehensive Digital Marketing Services</h1>
+        <p>
+          At Ignite Digital, we offer a full suite of integrated marketing
+          solutions designed to elevate your brand, attract your ideal
+          customers, and drive measurable growth.
+        </p>
+      </div>
+    </section>
+
+    <section id="service-seo" class="service-detail-section">
+      <div class="container">
+        <h2>Search Engine Optimization (SEO)</h2>
+        <div class="content-flex">
+          <div class="text-content">
+            <p>
+              **Dominate search engine results** and connect with customers
+              actively looking for your products or services. Our SEO strategies
+              are built on in-depth research, technical expertise, and
+              continuous optimization.
+            </p>
+            <h3>What We Offer:</h3>
+            <ul>
+              <li>
+                **Keyword Research:** Identifying high-value, relevant keywords.
+              </li>
+              <li>
+                **Technical SEO Audit:** Optimizing site structure, speed, and
+                mobile-friendliness.
+              </li>
+              <li>
+                **On-Page SEO:** Content optimization, meta tags, and internal
+                linking.
+              </li>
+              <li>
+                **Off-Page SEO & Link Building:** Earning high-quality backlinks
+                from authoritative sites.
+              </li>
+              <li>
+                **Local SEO:** Enhancing visibility for local searches and map
+                packs.
+              </li>
+              <li>
+                **Performance Tracking & Reporting:** Transparent insights into
+                your organic growth.
+              </li>
+            </ul>
+            <p>
+              Unlock the power of organic search to drive sustainable, long-term
+              traffic and build authority in your industry.
+            </p>
+          </div>
+          <div class="image-content">
+            <img
+              src="https://via.placeholder.com/400x300/007bff/ffffff?text=SEO+Graphic"
+              alt="SEO Optimization Services"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service-ppc" class="service-detail-section">
+      <div class="container">
+        <h2>Pay-Per-Click (PPC) Advertising</h2>
+        <div class="content-flex" style="flex-direction: row-reverse">
+          <div class="text-content">
+            <p>
+              **Generate immediate leads and sales** with highly targeted
+              Pay-Per-Click campaigns. We manage your ad spend efficiently to
+              ensure maximum return on investment across various platforms.
+            </p>
+            <h3>Our PPC Expertise Includes:</h3>
+            <ul>
+              <li>
+                **Google Ads Management:** Search, Display, Shopping, and
+                YouTube campaigns.
+              </li>
+              <li>
+                **Social Media Advertising:** Facebook, Instagram, LinkedIn, and
+                X (Twitter) Ads.
+              </li>
+              <li>
+                **Audience Targeting:** Precision targeting based on
+                demographics, interests, and behavior.
+              </li>
+              <li>
+                **Ad Copywriting & Design:** Crafting compelling ad creatives
+                that convert.
+              </li>
+              <li>
+                **Bid Management & Optimization:** Ensuring optimal spend for
+                peak performance.
+              </li>
+              <li>
+                **A/B Testing:** Continuous testing to improve ad effectiveness.
+              </li>
+            </ul>
+            <p>
+              Get instant visibility and drive qualified traffic directly to
+              your offers.
+            </p>
+          </div>
+          <div class="image-content">
+            <img
+              src="https://via.placeholder.com/400x300/ffc107/333333?text=PPC+Ads+Graphic"
+              alt="PPC Advertising Services"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service-social" class="service-detail-section">
+      <div class="container">
+        <h2>Social Media Marketing</h2>
+        <div class="content-flex">
+          <div class="text-content">
+            <p>
+              **Build a thriving community** around your brand and connect
+              directly with your audience where they spend their time. Our
+              social media strategies foster engagement, loyalty, and
+              conversions.
+            </p>
+            <h3>We Help You With:</h3>
+            <ul>
+              <li>
+                **Strategy Development:** Tailored plans for your target
+                platforms.
+              </li>
+              <li>
+                **Content Creation:** Engaging posts, visuals, and video
+                content.
+              </li>
+              <li>
+                **Community Management:** Active engagement and audience
+                interaction.
+              </li>
+              <li>
+                **Paid Social Campaigns:** Targeted ads to expand reach and
+                drive specific actions.
+              </li>
+              <li>
+                **Influencer Marketing:** Connecting you with relevant
+                influencers.
+              </li>
+              <li>
+                **Social Listening & Analytics:** Monitoring brand mentions and
+                measuring impact.
+              </li>
+            </ul>
+            <p>
+              Transform your social media presence into a powerful marketing
+              asset.
+            </p>
+          </div>
+          <div class="image-content">
+            <img
+              src="https://via.placeholder.com/400x300/28a745/ffffff?text=Social+Media+Graphic"
+              alt="Social Media Marketing Services"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service-content" class="service-detail-section">
+      <div class="container">
+        <h2>Content Marketing</h2>
+        <div class="content-flex" style="flex-direction: row-reverse">
+          <div class="text-content">
+            <p>
+              **Attract, educate, and convert** your audience with valuable,
+              relevant content. We develop content strategies that position you
+              as an authority and guide customers through their journey.
+            </p>
+            <h3>Our Content Solutions:</h3>
+            <ul>
+              <li>
+                **Content Strategy:** Planning topics, formats, and distribution
+                channels.
+              </li>
+              <li>
+                **Blog Posts & Articles:** Engaging, SEO-friendly written
+                content.
+              </li>
+              <li>
+                **Website Copywriting:** Persuasive and optimized website text.
+              </li>
+              <li>
+                **E-books & Whitepapers:** Long-form content for lead
+                generation.
+              </li>
+              <li>
+                **Video Scripts & Production:** Engaging video content for
+                various platforms.
+              </li>
+              <li>
+                **Infographics & Visual Content:** Creating shareable,
+                informative visuals.
+              </li>
+            </ul>
+            <p>
+              Educate, entertain, and inspire your audience, turning them into
+              loyal customers.
+            </p>
+          </div>
+          <div class="image-content">
+            <img
+              src="https://via.placeholder.com/400x300/6f42c1/ffffff?text=Content+Marketing+Graphic"
+              alt="Content Marketing Services"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta-bottom">
+      <div class="container">
+        <h2>Ready to Elevate Your Digital Presence?</h2>
+        <p>
+          Our team of experts is ready to craft a tailored digital marketing
+          strategy just for you. Let's discuss how we can achieve your business
+          goals.
+        </p>
+        <a href="form.html" class="cta-button" id="contact-page-button"
+          >Schedule a Free Consultation</a
+        >
+      </div>
+    </section>
+
+    <footer id="main-footer">
+      <div class="container">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <p>&copy; 2025 Ignite Digital. All rights reserved.</p>
+        <p>123 Digital Way, Cyber City, Hyderabad, Telangana 500081</p>
+        <p>Email: info@ignitedigital.com | Phone: +91 98765 43210</p>
+      </div>
+    </footer>
+  </body>
+</html>
